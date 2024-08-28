@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/2120/PNG/512/lock_padlock_locked_protected_security_icon_131240.png" sizes="any">
+
+    
+</head>
+<body>
+<div>
+    <h1>Encriptador de Texto</h1>
+    <div class="container">
+        
+   
+        <div class="caja1">
+            <input type="text" id="textoBase" placeholder="Ingrese el texto aquí" class="inputTexto">
+            <p><span><img src="./images/candado.png" alt=""></span>Solo letras minusculas y sin acentos</p>
+            <div class="botonera">
+                <button class="btn" onclick="encriptarTexto()">Encriptar</button>
+                <button class="btn2" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="caja2">
+            
+            <textarea name="" id="cajaTextoEncriptado" class="cajaTextoEncriptado"></textarea>
+           
+            <div class="mensaje" id="mensaje">
+                <img src="./images/alone.JPG" alt="">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desea encriptar o desencriptar</p>
+            </div>
+            <button class="btn" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+</div>
+    
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
